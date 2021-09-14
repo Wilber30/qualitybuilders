@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact_tele {
+  background-color: orange;
+}
+.contact_tele:hover .tele_icon {
+  color: #fff;
+  background-color: orange;
+}
+
+.tele_icon {
+  color: orange;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=_header.css.map */
