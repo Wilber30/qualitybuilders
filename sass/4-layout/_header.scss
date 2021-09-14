@@ -1,7 +1,7 @@
 // header
 
-@import '../1-helpers/varibles';
-
+@import '../1-helpers/varibles',
+        '../1-helpers/media';
 
 .inner {
   padding: 20px 0px 20px 0px;
@@ -9,24 +9,24 @@
 
 .container {
   margin: auto;
-  width: $common-site-width;
 }
 
 .logo {
   width: 220px;
-  height: 30%;
 }
 
 .nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
 .nav_list {
   display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 0px;
   padding: 0px;
-  gap: 30px;
   list-style: none;
 }
 
