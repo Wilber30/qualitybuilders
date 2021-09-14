@@ -1,5 +1,5 @@
 // This should contain only varible declarations
-// (A reminder than css and sass both have their own varibles that behave very differently) 
+// (A reminder than css and sass both have their own varibles that behave very differently)
 
 
 // *****************
@@ -12,19 +12,19 @@
 // Font related
 // *****************
 
-// Font weights 
+// Font weights
 $light: 300;
 $normal: 400;
 $semibold: 500;
 $bold: 700;
 
 // font stacks
-@font-face {
-    // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$roboto-font-path}/Roboto-Thin.woff2") format("woff2");
-    font-family: "Roboto";
-    font-weight: 100;
-}
+// @font-face {
+//     // This is parsed as a normal function call that takes a quoted string.
+//     src: url("#{$roboto-font-path}/Roboto-Thin.woff2") format("woff2");
+//     font-family: "Roboto";
+//     font-weight: 100;
+// }
 
 
 // *****************

@@ -1,10 +1,38 @@
 // header
+
+@import '../1-helpers/varibles';
+
+
+.inner {
+  padding: 20px 0px 20px 0px;
+}
+
+.container {
+  margin: auto;
+  width: $common-site-width;
+}
+
+.logo {
+  width: 220px;
+  height: 30%;
+}
+
 .nav {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav_list {
+  display: flex;
+  padding: 0px;
+  gap: 30px;
+  list-style: none;
 }
 
 .contact_tele {
+  display: flex;
+  align-items: center;
   background-color: orange;
   &:hover .tele_icon {
     color: #fff;
