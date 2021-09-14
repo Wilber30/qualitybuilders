@@ -24,10 +24,17 @@
 .nav_list {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 50%;
   margin: 0px;
   padding: 0px;
+  text-transform: uppercase;
   list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 .contact_tele {
@@ -41,6 +48,6 @@
 }
 
 .tele_icon {
-  color: orange;
+  border-radius: 50%;
   background-color: #fff;
 }
