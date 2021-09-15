@@ -1,4 +1,5 @@
 // header
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 @import '../1-helpers/varibles',
         '../1-helpers/media';
@@ -31,6 +32,9 @@
   list-style: none;
 }
 
+.item {
+
+}
 
 a {
   text-decoration: none;
@@ -41,6 +45,9 @@ a {
   display: flex;
   align-items: center;
   background-color: orange;
+  &:hover {
+    background-color: #fff;
+  }
   &:hover .tele_icon {
     background-color: orange;
     color: #fff;

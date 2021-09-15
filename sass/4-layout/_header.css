@@ -51,6 +51,9 @@ a {
   align-items: center;
   background-color: orange;
 }
+.contact_tele:hover {
+  background-color: #fff;
+}
 .contact_tele:hover .tele_icon {
   background-color: orange;
   color: #fff;
