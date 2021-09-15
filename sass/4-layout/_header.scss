@@ -1,8 +1,10 @@
 // header
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-
 @import '../1-helpers/varibles',
         '../1-helpers/media';
+
+header {
+  font-weight: 500;
+}
 
 .inner {
   padding: 20px 0px 20px 0px;
@@ -33,31 +35,37 @@
 }
 
 .item {
-
+  // min-width: 120px;
 }
 
 a {
   text-decoration: none;
-  margin-right: 10px;
 }
 
 .contact_tele {
   display: flex;
+  padding: 4px 8px 4px 8px;
   align-items: center;
+  border-radius: 5px;
   background-color: orange;
   &:hover {
     background-color: #fff;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in;
+    border: 1px solid orange;
   }
   &:hover .tele_icon {
     background-color: orange;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in;
     color: #fff;
   }
 }
 
 .tele_icon {
   padding: 5px;
+  margin-right: 10px;
   border-radius: 50%;
-  font-size: 20px;
   color: orange;
   background-color: #fff;
 }
