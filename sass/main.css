@@ -29,6 +29,11 @@ body {
   font-family: Roboto;
 }
 
+main {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -132,6 +137,39 @@ a {
   border-radius: 50%;
   color: orange;
   background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    display: inline-block !important;
+    position: absolute;
+    right: 35%;
+  }
+}
+@media (max-width: 768px) {
+  .nav_list {
+    display: none !important;
+  }
+}
+.overlay {
+  position: absolute;
+  background-color: orange;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

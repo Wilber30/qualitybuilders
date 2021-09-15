@@ -2,4 +2,9 @@ body {
   font-family: Roboto;
 }
 
+main {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 /*# sourceMappingURL=_base.css.map */

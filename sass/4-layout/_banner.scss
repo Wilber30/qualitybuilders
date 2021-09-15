@@ -1,0 +1,12 @@
+//  Banner
+@import '../1-helpers/varibles',
+        '../1-helpers/media';
+
+.carousel {
+}
+
+.overlay {
+  position: absolute;
+  background-color: orange;
+  z-index: 1;
+}
