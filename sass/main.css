@@ -66,14 +66,10 @@ a {
   align-items: center;
   background-color: orange;
 }
-.contact_tele:hover .tele_icon {
-  color: #fff;
-  background-color: orange;
-}
-
 .tele_icon {
   border-radius: 50%;
-  background-color: #fff;
+  color: #fff;
+  background-color: orange;
 }
 
 /*# sourceMappingURL=main.css.map */
