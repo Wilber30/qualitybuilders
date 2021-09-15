@@ -42,12 +42,15 @@ a {
   align-items: center;
   background-color: orange;
   &:hover .tele_icon {
-   
+    background-color: orange;
+    color: #fff;
   }
 }
 
 .tele_icon {
+  padding: 5px;
   border-radius: 50%;
-  color: #fff;
-  background-color: orange
+  font-size: 20px;
+  color: orange;
+  background-color: #fff;
 }
