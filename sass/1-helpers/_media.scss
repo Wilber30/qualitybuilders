@@ -1,6 +1,7 @@
 //media query syntax
 @import '../1-helpers/varibles';
 
+// Conatiner width
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -16,5 +17,20 @@
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+}
+
+// Responsive header content
+@media (max-width: 768px) {
+  .menu {
+    display: inline-block !important;
+    position: absolute;
+    right: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav_list {
+    display: none !important;
   }
 }

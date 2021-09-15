@@ -34,12 +34,22 @@ header {
   list-style: none;
 }
 
-.item {
-  // min-width: 120px;
-}
-
 a {
   text-decoration: none;
+}
+
+.menu {
+  display: none; 
+  text-align: center;
+  width: 35px;
+  padding: 2px;
+  font-size: 10px;
+  border-radius: 5px;
+  background-color: orange;
+}
+
+.hamburger {
+  font-size: 20px;
 }
 
 .contact_tele {
