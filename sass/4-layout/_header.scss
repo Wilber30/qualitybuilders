@@ -2,6 +2,14 @@
 @import '../1-helpers/varibles',
         '../1-helpers/media';
 
+// .top {
+//   width: 100%;
+//   min-height: 700px;
+//   height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+// }
+
 header {
   font-weight: 500;
 }
@@ -39,7 +47,7 @@ a {
 }
 
 .menu {
-  display: none; 
+  display: none;
   text-align: center;
   width: 35px;
   padding: 2px;

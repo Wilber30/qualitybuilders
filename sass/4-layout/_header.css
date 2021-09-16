@@ -16,6 +16,8 @@
 @media (max-width: 768px) {
   .menu {
     display: inline-block !important;
+    position: absolute;
+    right: 35%;
   }
 }
 @media (max-width: 768px) {
