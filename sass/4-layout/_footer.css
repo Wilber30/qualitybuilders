@@ -30,5 +30,31 @@
     border-left: 520px solid orange !important;
   }
 }
+.footer_contact {
+  background-color: #565656;
+}
 
-/*# sourceMappingURL=_media.css.map */
+.contact_text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.details {
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  font-size: large;
+  color: #fff;
+}
+
+.end_btn {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  font-family: inherit;
+  background-color: #fff;
+  padding: 15px 60px;
+  border: 3px solid orange;
+}
+
+/*# sourceMappingURL=_footer.css.map */

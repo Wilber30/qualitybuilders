@@ -1,0 +1,27 @@
+// top footer
+@import '../1-helpers/varibles',
+        '../1-helpers/media',
+        '../1-helpers/mixins';
+
+.footer_contact {
+background-color: #565656;
+}
+
+.contact_text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.details {
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  font-size: large;
+  color: $white-text;
+}
+
+.end_btn {
+  @include btn-lg;
+  padding: 15px 60px;
+  border: 3px solid orange;
+}
