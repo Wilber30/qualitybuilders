@@ -1,15 +1,15 @@
 @media (min-width: 768px) {
-  .container {
+  .container, .text-box {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container, .text-box {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container, .text-box {
     width: 1170px;
   }
 }
@@ -25,6 +25,11 @@
     display: none !important;
   }
 }
+@media (max-width: 768px) {
+  .overlay:after {
+    border-left: 380px solid orange !important;
+  }
+}
 .banner {
   position: relative;
   display: flex;
@@ -38,11 +43,27 @@
   background-image: url("../assets/images/Housing-Home-Neighborhood-Construction-Intelligence-Header-Alt-02.jpg");
 }
 
+.content_container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 .overlay {
+  content: "";
   position: absolute;
   width: 32%;
   height: 100vh;
   background-color: orange;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .overlay:after {
@@ -57,19 +78,47 @@
   border-bottom: 350px solid transparent;
 }
 
-.text-box {
-  position: absolute;
-  top: 10%;
-  left: 65%;
-  z-index: 3;
-  min-width: 550px;
-}
-
 .headline {
+  margin-bottom: 20px;
   font-weight: 800;
   font-size: xxx-large;
   text-transform: uppercase;
   color: #fff;
+}
+
+.headline::after {
+  content: "";
+  display: block;
+  margin-top: 20px;
+  width: 390px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.banner-text {
+  font-size: large;
+  color: #fff;
+}
+
+.reliable {
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contact_me {
+  margin-top: 5px;
+  line-height: 50px;
+  padding: 10px 30px;
+  font-size: 1.25rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-family: inherit;
+  color: #dd;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=_banner.css.map */

@@ -1,15 +1,15 @@
 @media (min-width: 768px) {
-  .container {
+  .container, .text-box {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container, .text-box {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container, .text-box {
     width: 1170px;
   }
 }
@@ -23,6 +23,11 @@
 @media (max-width: 768px) {
   .nav_list {
     display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .overlay:after {
+    border-left: 440px solid orange !important;
   }
 }
 
