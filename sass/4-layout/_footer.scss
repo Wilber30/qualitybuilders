@@ -4,7 +4,7 @@
         '../1-helpers/mixins';
 
 .footer_top {
-background-color: #565656;
+  background-color: #565656;
 }
 
 .contact_text {
@@ -25,4 +25,37 @@ background-color: #565656;
   @include btn-lg;
   padding: 15px 60px;
   border: 2px solid orange;
+}
+
+//  middle footer
+.footer_middle {
+  background-color: orange;
+}
+
+.footer_columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_links {
+  list-style: none;
+}
+
+.media_item {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.social_media {
+  display: flex;
+  gap: 10px;
+}
+
+.soc_icon::before {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.subscribe {
+  border-radius: 3px;
 }
