@@ -13,21 +13,37 @@
     width: 1170px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .menu {
     display: inline-block !important;
     position: absolute;
     right: 35%;
+    margin-right: 20px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .nav_list {
     display: none !important;
   }
 }
 @media (max-width: 768px) {
   .overlay:after {
-    border-left: 520px solid orange !important;
+    border-left: 380px solid orange !important;
+  }
+}
+@media (max-width: 768px) {
+  .content_container {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 992px) {
+  .br_lg {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .end_btn {
+    margin-top: 10px;
   }
 }
 

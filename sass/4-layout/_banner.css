@@ -30,6 +30,26 @@
     border-left: 520px solid orange !important;
   }
 }
+@media (max-width: 768px) {
+  .text-box {
+    padding: 0px 30px 0px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .content_container {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 992px) {
+  .br_lg {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .end_btn {
+    margin-top: 10px;
+  }
+}
 .banner {
   position: relative;
   display: flex;
@@ -75,6 +95,11 @@
   border-bottom: 350px solid transparent;
 }
 
+.text-box {
+  margin-bottom: 100px;
+  padding: 0px 30px 0px 30px;
+}
+
 .headline {
   margin-bottom: 20px;
   font-weight: 800;
@@ -104,7 +129,6 @@
 }
 
 .contact_me {
-  padding: 15px 45px;
   border: 1px solid transparent;
   border-radius: 4px;
   font-size: 1.25rem;
