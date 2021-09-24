@@ -47,7 +47,7 @@
   }
 }
 .footer_top {
-  background-color: #565656;
+  background-color: black;
 }
 
 .contact_text {
@@ -80,11 +80,14 @@
 
 .footer_columns {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .footer_links {
   list-style: none;
+  line-height: 22px;
+  padding-left: 0px;
 }
 
 .media_item {
@@ -95,6 +98,11 @@
 .social_media {
   display: flex;
   gap: 10px;
+  color: #fff;
+}
+
+.soc_name {
+  color: black;
 }
 
 .soc_icon::before {
@@ -102,8 +110,29 @@
   margin-right: 5px;
 }
 
+.email_enter {
+  display: flex;
+  font-family: inherit;
+}
+
+.subscribe_heading {
+  margin: 12px 0px 12px 0px;
+}
+
 .subscribe {
+  padding: 4px;
+  border-style: none;
   border-radius: 3px;
+  font-family: inherit;
+}
+
+.submit {
+  padding: 4px 8px 4px 8px;
+  border-radius: 3px;
+  border-style: none;
+  font-family: inherit;
+  background-color: black;
+  color: white;
 }
 
 /*# sourceMappingURL=_footer.css.map */
