@@ -38,23 +38,23 @@ a {
   text-decoration: none;
 }
 
-.drop_menu {
+.drop_down {
   display: none;
   position: absolute;
-  top: 10%;
-  left: 42%;
-  z-index: 307;
-}
-
-.drop_down {
-  list-style: none;
+  top: 250%;
+  margin: 0px;
   padding: 0px 5px 0px 5px;
+  z-index: 307;
+  list-style: none;
   line-height: 25px;
-  margin: 10px;
+  background-color: orange;
 }
 
-.item_service:hover .drop_menu {
-  display: block;
+.drop_menu{
+  position: relative;
+&:hover .drop_down {
+    display: block;
+  }
 }
 
 .menu {
