@@ -417,6 +417,11 @@ a {
   padding-left: 0px;
 }
 
+.arrow {
+  margin-right: 10px;
+  color: #fff;
+}
+
 .media_item {
   font-size: 12px;
   margin-bottom: 8px;
@@ -460,6 +465,16 @@ a {
   font-family: inherit;
   background-color: black;
   color: white;
+}
+
+.end_footer {
+  background-color: black;
+}
+
+.copyright_text {
+  display: flex;
+  justify-content: center;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -44,6 +44,11 @@
   padding-left: 0px;
 }
 
+.arrow {
+  margin-right: 10px;
+  color: $white-text;
+}
+
 .media_item {
   font-size: 12px;
   margin-bottom: 8px;
@@ -87,4 +92,15 @@
   font-family: inherit;
   background-color: black;
   color: white;
+}
+
+//end footer
+.end_footer {
+  background-color: black;
+}
+
+.copyright_text {
+  display: flex;
+  justify-content: center;
+  color: $white-text;
 }
