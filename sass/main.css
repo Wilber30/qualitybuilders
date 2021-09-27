@@ -31,6 +31,21 @@
     border-left: 380px solid orange !important;
   }
 }
+@media (max-width: 991px) {
+  .overlay {
+    border-right: 6px solid white;
+  }
+}
+@media (min-width: 1760px) {
+  .overlay {
+    border-right: 14px solid white;
+  }
+}
+@media (max-width: 768px) {
+  .overlay:before {
+    border-left: 385px solid white !important;
+  }
+}
 @media (max-width: 768px) {
   .content_container {
     justify-content: flex-start;
@@ -94,6 +109,21 @@ a {
 @media (max-width: 768px) {
   .overlay:after {
     border-left: 380px solid orange !important;
+  }
+}
+@media (max-width: 991px) {
+  .overlay {
+    border-right: 6px solid white;
+  }
+}
+@media (min-width: 1760px) {
+  .overlay {
+    border-right: 14px solid white;
+  }
+}
+@media (max-width: 768px) {
+  .overlay:before {
+    border-left: 385px solid white !important;
   }
 }
 @media (max-width: 768px) {
@@ -222,6 +252,21 @@ a {
     border-left: 380px solid orange !important;
   }
 }
+@media (max-width: 991px) {
+  .overlay {
+    border-right: 6px solid white;
+  }
+}
+@media (min-width: 1760px) {
+  .overlay {
+    border-right: 14px solid white;
+  }
+}
+@media (max-width: 768px) {
+  .overlay:before {
+    border-left: 385px solid white !important;
+  }
+}
 @media (max-width: 768px) {
   .content_container {
     justify-content: flex-start;
@@ -259,6 +304,16 @@ a {
   right: 0;
   top: 0;
   bottom: 0;
+  z-index: 305;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  left: 102%;
+  border: 350px solid transparent;
+  border-left: 280px solid white;
+  z-index: 300;
 }
 
 .overlay {
@@ -266,6 +321,7 @@ a {
   position: absolute;
   width: 32%;
   height: 100vh;
+  border-right: 11px solid white;
   background-color: orange;
   right: 0;
   left: 0;
@@ -280,6 +336,7 @@ a {
   border-left: 280px solid orange;
   border-top: 350px solid transparent;
   border-bottom: 350px solid transparent;
+  z-index: 302;
 }
 
 .text-box {
@@ -356,6 +413,21 @@ a {
 @media (max-width: 768px) {
   .overlay:after {
     border-left: 380px solid orange !important;
+  }
+}
+@media (max-width: 991px) {
+  .overlay {
+    border-right: 6px solid white;
+  }
+}
+@media (min-width: 1760px) {
+  .overlay {
+    border-right: 14px solid white;
+  }
+}
+@media (max-width: 768px) {
+  .overlay:before {
+    border-left: 385px solid white !important;
   }
 }
 @media (max-width: 768px) {

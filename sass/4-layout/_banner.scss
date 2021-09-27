@@ -25,6 +25,16 @@
   right: 0;
   top: 0;
   bottom: 0;
+  z-index: 305;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  left: 102%;
+  border: 350px solid transparent;
+  border-left: 280px solid white;
+  z-index: 300;
 }
 
 .overlay {
@@ -32,6 +42,7 @@
   position: absolute;
   width: 32%;
   height: 100vh;
+  border-right: 11px solid white;
   background-color: orange;
   right: 0;
   left: 0;
@@ -46,6 +57,7 @@
   border-left: 280px solid orange;
   border-top: 350px solid transparent;
   border-bottom: 350px solid transparent;
+  z-index: 302;
 }
 
 .text-box {
