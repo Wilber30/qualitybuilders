@@ -177,6 +177,25 @@ a {
   text-decoration: none;
 }
 
+.drop_menu {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 42%;
+  z-index: 307;
+}
+
+.drop_down {
+  list-style: none;
+  padding: 0px 5px 0px 5px;
+  line-height: 25px;
+  margin: 10px;
+}
+
+.item_service:hover .drop_menu {
+  display: block;
+}
+
 .menu {
   display: none;
   text-align: center;
