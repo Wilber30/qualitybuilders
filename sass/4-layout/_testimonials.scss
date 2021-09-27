@@ -1,0 +1,38 @@
+//Testimonials
+@import '../1-helpers/varibles',
+        '../1-helpers/media',
+        '../1-helpers/mixins';
+
+.testimonial_heading {
+  line-height: 1.5;
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.testimonial_heading:after {
+  content: "";
+  display: block;
+  width: 280px;
+  height: 1px;
+  background-color: black;
+}
+
+.quote_left {
+  font-size: 25px;
+}
+
+.quote {
+  margin: 5px;
+  font-weight: 300;
+  letter-spacing: .8px;
+  font-size: 25px;
+}
+.end_quote {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 25px;
+  letter-spacing: .8px;
+}
