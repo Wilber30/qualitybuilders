@@ -181,12 +181,12 @@ a {
 .drop_down {
   display: none;
   position: absolute;
-  top: 250%;
+  top: 200%;
   margin: 0px;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 10px 0px 10px;
   z-index: 307;
   list-style: none;
-  line-height: 25px;
+  line-height: 35px;
   background-color: orange;
 }
 
