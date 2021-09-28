@@ -178,10 +178,14 @@ a {
   text-decoration: none;
 }
 
+.drop_menu {
+  position: relative;
+}
+
 .drop_down {
   display: none;
   position: absolute;
-  top: 200%;
+  top: 100%;
   margin: 0px;
   padding: 0px 10px 0px 10px;
   z-index: 307;
@@ -190,11 +194,12 @@ a {
   background-color: orange;
 }
 
-.drop_menu {
-  position: relative;
-}
-.drop_menu:hover .drop_down {
+.container .drop_menu:hover .drop_down {
   display: block;
+}
+
+.nav_item:hover {
+  background-color: #fff;
 }
 
 .menu {
