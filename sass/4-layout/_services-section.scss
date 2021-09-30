@@ -1,0 +1,52 @@
+
+
+
+
+#page-services-section {
+    background-color: orange;
+    padding-bottom: 40px;
+
+    .top-text {
+        padding-bottom: 40px;
+        padding-top: 40px;
+        display: flex;
+        
+        h2 {
+            display: inline-block;
+            font-size: 2.5rem;
+            margin-right: 20px;
+            span {
+                width: 70%;
+                height: 2px;
+                background-color: white;
+                display: block;
+             }
+        }
+
+
+        
+        p {
+            display: inline-block;
+            color: white;
+            max-width: 75%;
+            font-weight: 300;
+        }
+    }
+
+    //the container to handle the tiles
+    .tile-container {
+        display: flex;
+        justify-content:space-between;
+        //flex-wrap:wrap;
+        flex-direction: row;
+    }
+
+}
+
+
+//anti margins for the container of the tiles
+
+.anti-margins {
+    margin-left: -20px;
+    margin-right: -20px;
+}

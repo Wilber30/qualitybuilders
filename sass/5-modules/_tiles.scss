@@ -1,0 +1,65 @@
+
+
+//the tiles for the services section
+.tile {
+    max-width: calc(100% / 3);
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    .image-container {
+        //idk why there is a gap there
+        margin-bottom: -4px;
+
+        img {
+            width: 100%;
+
+        }
+    }
+
+    .icon-container-outer {
+        position: relative;
+
+        .icon-container-inner {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #101721;
+
+
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            i {
+                padding-top: 20px;
+                color: white;
+            }
+        }
+    }
+
+    .description-area {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        padding-top: 60px;
+
+        background-color: white;
+
+        h3 {
+            padding-top: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        p {
+            padding-top: 10px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 1.4rem;
+        }
+    }
+}

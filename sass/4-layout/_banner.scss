@@ -7,7 +7,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  max-height: 700px;
+  //max-height: 700px;
 }
 
 .construction {
@@ -39,6 +39,19 @@
   bottom: 0;
 }
 
+//The before below needs to be resized to fill the remaining gap
+//then it should be done
+
+.overlay:before {
+  content: "";
+  position: absolute;
+  left: 102%;
+  border-left: 280px solid white;
+  border-top: 350px solid transparent;
+  border-bottom: 350px solid transparent;
+  z-index: 50;
+}
+
 .overlay:after {
   content: "";
   position: absolute;
@@ -46,11 +59,14 @@
   border-left: 280px solid orange;
   border-top: 350px solid transparent;
   border-bottom: 350px solid transparent;
+  z-index: 50;
 }
+
 
 .text-box {
   margin-bottom: 100px;
   padding: 0px 30px 0px 30px;
+  z-index: 100;
 }
 
 .headline {

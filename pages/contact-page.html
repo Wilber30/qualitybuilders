@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+
+</html>
+<html>
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <!-- site metas -->
+    <title></title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+
+    <!--apis-->
+
+    <!--main jquery import-->
+    <script src="/js/jquery-3.6.0.js"></script>
+
+    <!-- jquery plugins css inports -->
+    <link rel="stylesheet" href="/jquery plugins/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="/jquery plugins/slick/slick-theme.css" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+    <!-- main style css -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!--Leafletjs-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <!--Slick-->
+    <link rel="stylesheet" type="text/css" href="/jquery plugins/slick/slick.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="main_inner">
+            <header>
+                <div class="inner">
+                    <div class="container">
+                        <div class="nav">
+                            <img class="logo" src="/assets/images/quality_logo.png"
+                                alt="Quality Builders' company logo">
+                            <ul class="nav_list">
+                                <li class="item">
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Services</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Testimonials</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Contact us</a>
+                                </li>
+                            </ul>
+                            <div class="menu">
+                                <i class="fas fa-bars hamburger"></i>
+                                MENU
+                            </div>
+                            <div class="contact_tele">
+                                <i class="fas fa-phone-alt tele_icon"></i>
+                                01234 567890
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <div id="page-description-section" class="page-section">
+                <div class="container contact-container">
+                    <div id="contact-form">
+                        <form action="/action_page.php">
+                            <!--First name-->
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                            <!--last name-->
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                            <!--Email address-->
+                            <label for="eAddress">Email Address</label>
+                            <input type="text" id="eAddress" name="email" placeholder="Your email address..">
+
+
+                            <!--Email address-->
+                            <label for="pNumber">Email Address</label>
+                            <input type="text" id="pNumber" name="phoneNumber" placeholder="Your number..">
+
+                            <!--Message-->
+                            <label for="subject">Message</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:200px"></textarea>
+                            <input type="submit" value="Submit">
+
+                            <label class="gdpr-container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                                Please tick this box if you agree to our Privacy Policy on how we use your data.
+                            </label>
+                        </form>
+
+                        <div id="mapid">
+
+                        </div>
+
+                        <div id="recaptcha">
+                            <p>
+                                recaptcha
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer_top">
+            <div class="inner">
+                <div class="container">
+                    <div class="contact_text">
+
+                        <p class="details">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br class="br_lg">
+                            tempor incididunt ut labore et dolore magna aliqua. Somnis iste natus.
+                        </p>
+                        <button class="end_btn" type="button" name="contact">Get In Touch</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_middle">
+            <div class="inner">
+                <div class="container">
+
+                    <div class="footer_columns">
+
+                        <ul class="footer_links">
+                            <h3><a href="#">Contact Us</a></h3>
+                            <li><a href="#">Contact our team at Quality Builders via:</a></li>
+                            <li><a href="#">email@qualitybuilders.com</a></li>
+                            <li><a href="#">01234567890</a></li>
+                            <li><a href="#">Unit 1, Address Street, City, Country</a></li>
+                            <li><a href="#">AB123CD</a></li>
+                        </ul>
+
+                        <ul class="footer_links">
+                            <h3>Sections</h3>
+                            <li><a href="#">Construction</a></li>
+                            <li><a href="#">Architecture</a></li>
+                            <li><a href="#">Installations</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Terms & Conditions - Privacy Policy</a></li>
+                        </ul>
+
+                        <ul class="footer_links">
+                            <h3>Follow Us On</h3>
+                            <div class="social_media">
+                                <li class="media_item">
+                                    <i class="fab fa-facebook-f soc_icon"></i>
+                                    Facebook
+                                </li>
+                                <li class="media_item">
+                                    <i class="fab fa-linkedin-in soc_icon"></i>
+                                    LinkedIn
+                                </li>
+                            </div>
+                            <div class="social_media">
+                                <li class="media_item">
+                                    <i class="fab fa-twitter soc_icon"></i>
+                                    Twitter
+                                </li>
+                                <li class="media_item">
+                                    <i class="fab fa-google-plus soc_icon"></i>
+                                    Google+
+                                </li>
+                            </div>
+                            <h3>Subscribe To Our List</h3>
+                            <form>
+                                <input class="subscribe" type="text" name="email" value="Enter Email Here">
+                            </form>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div> <!-- middle footer end -->
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <script src="/js/map.js"></script>
+</body>
+
+</html>
