@@ -97,4 +97,8 @@
   @include btn-lg;
   margin-top: 5px;
   padding: 15px 45px;
+  &:hover {
+    @include transition-link;
+    background-color: $white-hover;
+  }
 }

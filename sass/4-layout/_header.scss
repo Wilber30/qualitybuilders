@@ -1,6 +1,7 @@
 // header
 @import '../1-helpers/varibles',
-        '../1-helpers/media';
+        '../1-helpers/media',
+        '../1-helpers/mixins';
 
 header {
   font-weight: 500;
@@ -43,10 +44,14 @@ a {
   position: relative;
 }
 
+.service_item {
+  padding-bottom: 70px;
+}
+
 .drop_down {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 200%;
   margin: 0px;
   padding: 0px 10px 0px 10px;
   z-index: 307;
@@ -60,6 +65,7 @@ a {
 }
 
 .nav_item:hover {
+  @include transition-link;
   background-color: $white-text;
 }
 
@@ -84,15 +90,13 @@ a {
   border-radius: 5px;
   background-color: orange;
   &:hover {
+    @include transition-link;
     background-color: #fff;
-    transition-duration: 0.15s;
-    transition-timing-function: ease-in;
     border: 1px solid orange;
   }
   &:hover .tele_icon {
+    @include transition-link;
     background-color: orange;
-    transition-duration: 0.15s;
-    transition-timing-function: ease-in;
     color: #fff;
   }
 }

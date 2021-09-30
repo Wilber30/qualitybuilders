@@ -31,6 +31,21 @@
     border-left: 380px solid orange !important;
   }
 }
+@media (max-width: 991px) {
+  .overlay {
+    border-right: 6px solid white;
+  }
+}
+@media (min-width: 1760px) {
+  .overlay {
+    border-right: 14px solid white;
+  }
+}
+@media (max-width: 768px) {
+  .overlay:before {
+    border-left: 385px solid white !important;
+  }
+}
 @media (max-width: 768px) {
   .content_container {
     justify-content: flex-start;
@@ -144,6 +159,11 @@
   background-color: #fff;
   margin-top: 5px;
   padding: 15px 45px;
+}
+.contact_me:hover {
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
+  background-color: #bfbfbf;
 }
 
 /*# sourceMappingURL=_banner.css.map */

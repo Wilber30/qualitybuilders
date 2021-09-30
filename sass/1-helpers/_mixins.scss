@@ -7,3 +7,8 @@
     font-family: inherit;
     background-color: #fff;
 }
+
+@mixin transition-link {
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
+}

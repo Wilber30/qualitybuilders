@@ -25,6 +25,10 @@
   @include btn-lg;
   padding: 15px 60px;
   border: 2px solid orange;
+  &:hover {
+    @include transition-link;
+    background-color: $white-hover;
+  }
 }
 
 //  middle footer
@@ -92,6 +96,10 @@
   font-family: inherit;
   background-color: black;
   color: white;
+  &:hover {
+    @include transition-link;
+    background-color: grey;
+  }
 }
 
 //end footer

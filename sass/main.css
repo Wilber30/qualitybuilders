@@ -182,10 +182,14 @@ a {
   position: relative;
 }
 
+.service_item {
+  padding-bottom: 70px;
+}
+
 .drop_down {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 200%;
   margin: 0px;
   padding: 0px 10px 0px 10px;
   z-index: 307;
@@ -199,6 +203,8 @@ a {
 }
 
 .nav_item:hover {
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
   background-color: #fff;
 }
 
@@ -224,15 +230,15 @@ a {
   background-color: orange;
 }
 .contact_tele:hover {
-  background-color: #fff;
   transition-duration: 0.15s;
   transition-timing-function: ease-in;
+  background-color: #fff;
   border: 1px solid orange;
 }
 .contact_tele:hover .tele_icon {
-  background-color: orange;
   transition-duration: 0.15s;
   transition-timing-function: ease-in;
+  background-color: orange;
   color: #fff;
 }
 
@@ -405,6 +411,11 @@ a {
   background-color: #fff;
   margin-top: 5px;
   padding: 15px 45px;
+}
+.contact_me:hover {
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
+  background-color: #bfbfbf;
 }
 
 @media (min-width: 768px) {
@@ -595,6 +606,11 @@ a {
   padding: 15px 60px;
   border: 2px solid orange;
 }
+.end_btn:hover {
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
+  background-color: #bfbfbf;
+}
 
 .footer_middle {
   background-color: orange;
@@ -660,6 +676,11 @@ a {
   font-family: inherit;
   background-color: black;
   color: white;
+}
+.submit:hover {
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
+  background-color: grey;
 }
 
 .end_footer {

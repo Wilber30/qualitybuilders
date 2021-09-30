@@ -31,6 +31,21 @@
     border-left: 380px solid orange !important;
   }
 }
+@media (max-width: 991px) {
+  .overlay {
+    border-right: 6px solid white;
+  }
+}
+@media (min-width: 1760px) {
+  .overlay {
+    border-right: 14px solid white;
+  }
+}
+@media (max-width: 768px) {
+  .overlay:before {
+    border-left: 385px solid white !important;
+  }
+}
 @media (max-width: 768px) {
   .content_container {
     justify-content: flex-start;
@@ -72,6 +87,11 @@
   background-color: #fff;
   padding: 15px 60px;
   border: 2px solid orange;
+}
+.end_btn:hover {
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
+  background-color: #bfbfbf;
 }
 
 .footer_middle {
@@ -138,6 +158,11 @@
   font-family: inherit;
   background-color: black;
   color: white;
+}
+.submit:hover {
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
+  background-color: grey;
 }
 
 .end_footer {
