@@ -9,6 +9,10 @@
   flex-direction: column;
   height: 72vh;
   overflow: hidden;
+
+  .slick-track {
+    height: 100vh;
+  }
 }
 
 .construction {
@@ -16,7 +20,11 @@
   display: flex;
   overflow: hidden;
   background-image: url("../assets/images/Housing-Home-Neighborhood-Construction-Intelligence-Header-Alt-02.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 .content_container {
   display: flex;

@@ -366,12 +366,18 @@ a {
   height: 72vh;
   overflow: hidden;
 }
+.banner .slick-track {
+  height: 100vh;
+}
 
 .construction {
   height: 100vh;
   display: flex;
   overflow: hidden;
   background-image: url("../assets/images/Housing-Home-Neighborhood-Construction-Intelligence-Header-Alt-02.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content_container {
