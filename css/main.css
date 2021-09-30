@@ -82,6 +82,48 @@ a {
   color: black;
 }
 
+h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+h2 {
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+p {
+  color: black;
+  font-size: 1.5rem;
+}
+
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .container, .text-box {
     width: 750px;
@@ -321,11 +363,14 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 72vh;
+  overflow: hidden;
 }
 
 .construction {
   height: 100vh;
   display: flex;
+  overflow: hidden;
   background-image: url("../assets/images/Housing-Home-Neighborhood-Construction-Intelligence-Header-Alt-02.jpg");
 }
 
@@ -430,104 +475,6 @@ a {
   transition-duration: 0.15s;
   transition-timing-function: ease-in;
   background-color: #bfbfbf;
-}
-
-@media (min-width: 768px) {
-  .container, .text-box {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container, .text-box {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container, .text-box {
-    width: 1170px;
-  }
-}
-@media (max-width: 991px) {
-  .menu {
-    display: inline-block !important;
-    position: absolute;
-    right: 35%;
-    margin-right: 20px;
-  }
-}
-@media (max-width: 991px) {
-  .nav_list {
-    display: none !important;
-  }
-}
-@media (max-width: 768px) {
-  .overlay:after {
-    border-left: 380px solid orange !important;
-  }
-}
-@media (max-width: 991px) {
-  .overlay {
-    border-right: 6px solid white;
-  }
-}
-@media (min-width: 1760px) {
-  .overlay {
-    border-right: 14px solid white;
-  }
-}
-@media (max-width: 768px) {
-  .overlay:before {
-    border-left: 385px solid white !important;
-  }
-}
-@media (max-width: 768px) {
-  .content_container {
-    justify-content: flex-start;
-  }
-}
-@media (max-width: 992px) {
-  .br_lg {
-    display: none;
-  }
-}
-@media (max-width: 992px) {
-  .end_btn {
-    margin-top: 10px;
-  }
-}
-.testimonial_heading {
-  line-height: 1.5;
-  margin-top: 10px;
-  font-weight: 300;
-  font-size: 40px;
-}
-
-.testimonial_heading:after {
-  content: "";
-  display: block;
-  width: 280px;
-  height: 1px;
-  background-color: black;
-}
-
-.quote_left {
-  font-size: 25px;
-}
-
-.quote {
-  margin: 5px;
-  font-weight: 300;
-  letter-spacing: 0.8px;
-  font-size: 25px;
-}
-
-.end_quote {
-  display: flex;
-  margin: 10px;
-  justify-content: space-between;
-  font-weight: 300;
-  font-size: 25px;
-  letter-spacing: 0.8px;
 }
 
 @media (min-width: 768px) {
