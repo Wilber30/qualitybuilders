@@ -1,0 +1,35 @@
+.page-section {
+  max-width: 100%;
+  background-color: orange;
+}
+.page-section .container {
+  display: flex;
+  flex-direction: row;
+}
+.page-section .image-container {
+  max-width: 50%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+.page-section .image-container .main-image {
+  width: 100%;
+  height: 100%;
+}
+.page-section .text-area {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.page-section .text-area h1 {
+  font-weight: 300;
+  font-size: 40px;
+  color: #2e2e2e;
+}
+.page-section .text-area p {
+  color: #2e2e2e;
+}
+
+.p-specific {
+  padding-right: 40px;
+}
+/*# sourceMappingURL=sub-page-section.css.map */

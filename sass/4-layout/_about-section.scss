@@ -1,0 +1,124 @@
+
+
+#page-description-section {
+
+    .container {
+        display: flex;
+    }
+
+
+    .text-area {
+        max-width: 50%;
+        margin-right: 40px;
+        margin-top: 40px;
+        h1 {
+            font-weight: 300;
+            font-size: 40px;
+            color: black;
+        }
+
+        img {
+            max-width: 500px;
+        }
+
+        span{
+            width: 60%;
+            height: 2px;
+            background-color: rgb(85, 85, 85);
+            display: block;
+        }
+
+        p {
+            margin-top: 40px;
+            color: rgb(85, 85, 85);
+        }
+    }
+
+
+    .image-montage {
+        border-style: solid;
+        border-width: 15px;
+        border-color: orange;
+        max-width: 50%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 8px;
+
+        margin-top: 40px;
+
+        img:first-child {
+            max-width: 100%;
+        }
+        img {
+            max-width: 50%;
+        }
+        img:last-child {
+            max-width: 50%;
+        }
+    }
+
+    .partners-carousel-container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+
+        //slick stlying
+        .slick-arrow {
+            width: 150px ;
+            height: 150px ;
+        }
+
+        .slick-next {
+            right: -200px;
+        }
+
+        .slick-prev{
+            left: -200px;
+        }
+        
+
+        .slick-prev:before {
+            color: black;
+            content: "<";
+            font-size: 8rem;
+        }
+
+
+
+         .slick-next:before {
+            color: black;
+            content: ">";
+            font-size: 8rem;
+        }
+
+        h2 {
+            color: black;
+            font-size: 2rem;
+        }
+        span{
+            width: 15%;
+            height: 2px;
+            background-color: rgb(85, 85, 85);
+            display: block;
+        }
+
+        .partner-carousel-inner {
+            margin-left: auto;
+            margin-right: auto;
+
+            img {
+                max-height: 150px;
+                max-width: 150px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                padding-right: 76px;
+                padding-left: 76px;
+            }
+
+
+        }
+    }
+
+}

@@ -61,6 +61,10 @@
     margin-top: 10px;
   }
 }
+.white-bckground {
+  background: white !important;
+}
+
 body {
   font-family: Roboto;
 }
@@ -317,7 +321,6 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-height: 700px;
 }
 
 .construction {
@@ -360,6 +363,16 @@ a {
   bottom: 0;
 }
 
+.overlay:before {
+  content: "";
+  position: absolute;
+  left: 102%;
+  border-left: 280px solid white;
+  border-top: 350px solid transparent;
+  border-bottom: 350px solid transparent;
+  z-index: 50;
+}
+
 .overlay:after {
   content: "";
   position: absolute;
@@ -373,6 +386,7 @@ a {
 .text-box {
   margin-bottom: 100px;
   padding: 0px 30px 0px 30px;
+  z-index: 100;
 }
 
 .headline {
@@ -693,4 +707,271 @@ a {
   color: #fff;
 }
 
+#page-description-section .container {
+  display: flex;
+}
+#page-description-section .text-area {
+  max-width: 50%;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+#page-description-section .text-area h1 {
+  font-weight: 300;
+  font-size: 40px;
+  color: black;
+}
+#page-description-section .text-area img {
+  max-width: 500px;
+}
+#page-description-section .text-area span {
+  width: 60%;
+  height: 2px;
+  background-color: #555555;
+  display: block;
+}
+#page-description-section .text-area p {
+  margin-top: 40px;
+  color: #555555;
+}
+#page-description-section .image-montage {
+  border-style: solid;
+  border-width: 15px;
+  border-color: orange;
+  max-width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 8px;
+  margin-top: 40px;
+}
+#page-description-section .image-montage img:first-child {
+  max-width: 100%;
+}
+#page-description-section .image-montage img {
+  max-width: 50%;
+}
+#page-description-section .image-montage img:last-child {
+  max-width: 50%;
+}
+#page-description-section .partners-carousel-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+#page-description-section .partners-carousel-container .slick-arrow {
+  width: 150px;
+  height: 150px;
+}
+#page-description-section .partners-carousel-container .slick-next {
+  right: -200px;
+}
+#page-description-section .partners-carousel-container .slick-prev {
+  left: -200px;
+}
+#page-description-section .partners-carousel-container .slick-prev:before {
+  color: black;
+  content: "<";
+  font-size: 8rem;
+}
+#page-description-section .partners-carousel-container .slick-next:before {
+  color: black;
+  content: ">";
+  font-size: 8rem;
+}
+#page-description-section .partners-carousel-container h2 {
+  color: black;
+  font-size: 2rem;
+}
+#page-description-section .partners-carousel-container span {
+  width: 15%;
+  height: 2px;
+  background-color: #555555;
+  display: block;
+}
+#page-description-section .partners-carousel-container .partner-carousel-inner {
+  margin-left: auto;
+  margin-right: auto;
+}
+#page-description-section .partners-carousel-container .partner-carousel-inner img {
+  max-height: 150px;
+  max-width: 150px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 76px;
+  padding-left: 76px;
+}
+
+#page-services-section {
+  background-color: orange;
+  padding-bottom: 40px;
+}
+#page-services-section .top-text {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  display: flex;
+}
+#page-services-section .top-text h2 {
+  display: inline-block;
+  font-size: 2.5rem;
+  margin-right: 20px;
+}
+#page-services-section .top-text h2 span {
+  width: 70%;
+  height: 2px;
+  background-color: white;
+  display: block;
+}
+#page-services-section .top-text p {
+  display: inline-block;
+  color: white;
+  max-width: 75%;
+  font-weight: 300;
+}
+#page-services-section .tile-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.anti-margins {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.page-section {
+  max-width: 100%;
+  background-color: orange;
+}
+.page-section .container {
+  display: flex;
+  flex-direction: row;
+}
+.page-section .image-container {
+  max-width: 50%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+.page-section .image-container .main-image {
+  width: 100%;
+  height: 100%;
+}
+.page-section .text-area {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.page-section .text-area h1 {
+  font-weight: 300;
+  font-size: 40px;
+  color: #2e2e2e;
+}
+.page-section .text-area p {
+  color: #2e2e2e;
+}
+
+.p-specific {
+  padding-right: 40px;
+}
+
+.tile {
+  max-width: 33.3333333333%;
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.tile .image-container {
+  margin-bottom: -4px;
+}
+.tile .image-container img {
+  width: 100%;
+}
+.tile .icon-container-outer {
+  position: relative;
+}
+.tile .icon-container-outer .icon-container-inner {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #101721;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tile .icon-container-outer .icon-container-inner i {
+  padding-top: 20px;
+  color: white;
+}
+.tile .description-area {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-top: 60px;
+  background-color: white;
+}
+.tile .description-area h3 {
+  padding-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+}
+.tile .description-area p {
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+#contact-form {
+  margin: 100px;
+}
+#contact-form input[type=text],
+#contact-form select,
+#contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+#contact-form input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#contact-form input[type=submit]:hover {
+  background-color: #45a049;
+}
+#contact-form .gdpr-container {
+  padding-top: 40px;
+  cursor: pointer;
+  display: block;
+}
+#contact-form #mapid {
+  height: 180px;
+  width: 600px;
+  height: 300px;
+  display: inline-block;
+}
+#contact-form #recaptcha {
+  background-color: white;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  border: 4mm ridge rgba(170, 50, 220, 0.6);
+}
+
+.contact-container {
+  width: 1600px;
+}
 /*# sourceMappingURL=main.css.map */

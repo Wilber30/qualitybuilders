@@ -1,11 +1,12 @@
-// helpers      
- @import '1-helpers/varibles',
-          '1-helpers/media',
-          '1-helpers/mixins';
 
-//layout imports
- @import '3-basics/base',
-          '4-layout/header',
-          '4-layout/banner',
-          '4-layout/testimonials',
-          '4-layout/footer';
+// helpers
+ @import '1-helpers/varibles', '1-helpers/media','1-helpers/mixins', '1-helpers/utility';
+
+//basics
+ @import '3-basics/base', '3-basics/reset';
+ 
+//layout
+ @import '4-layout/header', '4-layout/banner', '4-layout/footer', '4-layout/about-section', '4-layout/services-section';
+
+ //modules 
+ @import '5-modules/sub-page-section.scss', '5-modules/tiles', '5-modules/contact-form.scss';
