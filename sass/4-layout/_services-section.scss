@@ -10,11 +10,23 @@
         padding-bottom: 40px;
         padding-top: 40px;
         display: flex;
+
+        @media screen and (max-width:992px) {
+            flex-wrap: wrap;
+            padding-left: 40px;
+            padding-bottom: 0;
+        }
         
         h2 {
             display: inline-block;
             font-size: 2.5rem;
             margin-right: 20px;
+
+            @media screen and (max-width:992px) {
+                flex-wrap: wrap;
+                padding-bottom: 30px;
+            }
+
             span {
                 width: 70%;
                 height: 2px;
@@ -37,8 +49,12 @@
     .tile-container {
         display: flex;
         justify-content:space-between;
-        //flex-wrap:wrap;
         flex-direction: row;
+
+        @media screen and (max-width:992px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
 }

@@ -61,6 +61,18 @@
     margin-top: 10px;
   }
 }
+@media (max-width: 992px) {
+  #page-description-section .container {
+    flex-wrap: wrap;
+  }
+  #page-description-section .container .text-area {
+    max-width: 100%;
+  }
+  #page-description-section .container .image-montage {
+    max-width: 100%;
+    height: 100%;
+  }
+}
 .white-bckground {
   background: white !important;
 }
@@ -185,6 +197,18 @@ a {
 @media (max-width: 992px) {
   .end_btn {
     margin-top: 10px;
+  }
+}
+@media (max-width: 992px) {
+  #page-description-section .container {
+    flex-wrap: wrap;
+  }
+  #page-description-section .container .text-area {
+    max-width: 100%;
+  }
+  #page-description-section .container .image-montage {
+    max-width: 100%;
+    height: 100%;
   }
 }
 header {
@@ -359,6 +383,18 @@ a {
     margin-top: 10px;
   }
 }
+@media (max-width: 992px) {
+  #page-description-section .container {
+    flex-wrap: wrap;
+  }
+  #page-description-section .container .text-area {
+    max-width: 100%;
+  }
+  #page-description-section .container .image-montage {
+    max-width: 100%;
+    height: 100%;
+  }
+}
 .banner {
   position: relative;
   display: flex;
@@ -369,15 +405,66 @@ a {
 .banner .slick-track {
   height: 100vh;
 }
+.banner .slick-arrow {
+  width: 150px;
+  height: 150px;
+  z-index: 900;
+}
+.banner .slick-next {
+  right: 90px;
+  top: 350px;
+}
+.banner .slick-prev {
+  left: 90px;
+  top: 350px;
+}
+.banner .slick-prev:before {
+  color: black;
+  content: "<";
+  font-size: 8rem;
+}
+.banner .slick-next:before {
+  color: black;
+  content: ">";
+  font-size: 8rem;
+}
+@media only screen and (max-width: 1345px) {
+  .banner .slick-arrow {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 1580px) {
+  .banner .slick-next {
+    right: -25px;
+  }
+  .banner .slick-prev {
+    left: -25px;
+  }
+}
 
 .construction {
   height: 100vh;
   display: flex;
   overflow: hidden;
-  background-image: url("../assets/images/Housing-Home-Neighborhood-Construction-Intelligence-Header-Alt-02.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.construction-bck1 {
+  background-image: url("/assets/images/christopher-burns-8KfCR12oeUM-unsplash.jpg");
+}
+
+.construction-bck2 {
+  background-image: url("/assets/images/Housing-Home-Neighborhood-Construction-Intelligence-Header-Alt-02.jpg");
+}
+
+.construction-bck3 {
+  background-image: url("/assets/images/mark-potterton-sNVkn3507Oo-unsplash.jpg");
+}
+
+.construction-bck4 {
+  background-image: url("/assets/images/scott-blake-x-ghf9LjrVg-unsplash.jpg");
 }
 
 .content_container {
@@ -435,7 +522,6 @@ a {
 }
 
 .text-box {
-  margin-bottom: 100px;
   padding: 0px 30px 0px 30px;
   z-index: 100;
 }
@@ -546,8 +632,20 @@ a {
     margin-top: 10px;
   }
 }
+@media (max-width: 992px) {
+  #page-description-section .container {
+    flex-wrap: wrap;
+  }
+  #page-description-section .container .text-area {
+    max-width: 100%;
+  }
+  #page-description-section .container .image-montage {
+    max-width: 100%;
+    height: 100%;
+  }
+}
 .footer_top {
-  background-color: black;
+  background-color: #1B1F22;
 }
 
 .contact_text {
@@ -651,7 +749,7 @@ a {
 }
 
 .end_footer {
-  background-color: black;
+  background-color: #1B1F22;
 }
 
 .copyright_text {
@@ -674,7 +772,8 @@ a {
   color: black;
 }
 #page-description-section .text-area img {
-  max-width: 500px;
+  max-width: 100%;
+  height: auto;
 }
 #page-description-section .text-area span {
   width: 60%;
@@ -764,10 +863,23 @@ a {
   padding-top: 40px;
   display: flex;
 }
+@media screen and (max-width: 992px) {
+  #page-services-section .top-text {
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-bottom: 0;
+  }
+}
 #page-services-section .top-text h2 {
   display: inline-block;
   font-size: 2.5rem;
   margin-right: 20px;
+}
+@media screen and (max-width: 992px) {
+  #page-services-section .top-text h2 {
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
 }
 #page-services-section .top-text h2 span {
   width: 70%;
@@ -786,10 +898,127 @@ a {
   justify-content: space-between;
   flex-direction: row;
 }
+@media screen and (max-width: 992px) {
+  #page-services-section .tile-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 .anti-margins {
   margin-left: -20px;
   margin-right: -20px;
+}
+
+@media (min-width: 768px) {
+  .container, .text-box {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container, .text-box {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container, .text-box {
+    width: 1170px;
+  }
+}
+@media (max-width: 991px) {
+  .menu {
+    display: inline-block !important;
+    position: absolute;
+    right: 35%;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .nav_list {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .overlay:after {
+    border-left: 380px solid orange !important;
+  }
+}
+@media (max-width: 991px) {
+  .overlay {
+    border-right: 6px solid white;
+  }
+}
+@media (min-width: 1760px) {
+  .overlay {
+    border-right: 14px solid white;
+  }
+}
+@media (max-width: 768px) {
+  .overlay:before {
+    border-left: 385px solid white !important;
+  }
+}
+@media (max-width: 768px) {
+  .content_container {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 992px) {
+  .br_lg {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .end_btn {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 992px) {
+  #page-description-section .container {
+    flex-wrap: wrap;
+  }
+  #page-description-section .container .text-area {
+    max-width: 100%;
+  }
+  #page-description-section .container .image-montage {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+.testimonial_heading {
+  line-height: 1.5;
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 40px;
+  color: black;
+}
+
+.testimonial_heading:after {
+  content: "";
+  display: block;
+  width: 280px;
+  height: 1px;
+  background-color: black;
+}
+
+.quote_left {
+  font-size: 25px;
+}
+
+.quote {
+  margin: 5px;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  font-size: 25px;
+}
+
+.end_quote {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 25px;
+  letter-spacing: 0.8px;
 }
 
 .page-section {
@@ -800,15 +1029,37 @@ a {
   display: flex;
   flex-direction: row;
 }
+@media screen and (max-width: 992px) {
+  .page-section .container {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+}
 .page-section .image-container {
   max-width: 50%;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-right: 40px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .page-section .image-container {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .page-section .image-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0;
+  }
 }
 .page-section .image-container .main-image {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
 }
 .page-section .text-area {
   padding-bottom: 40px;
@@ -827,17 +1078,32 @@ a {
   padding-right: 40px;
 }
 
+.text-white {
+  color: rgba(255, 255, 255, 0.966) !important;
+}
+
 .tile {
-  max-width: 33.3333333333%;
+  width: 33.3333333333%;
   box-sizing: border-box;
   margin-left: 20px;
   margin-right: 20px;
 }
+@media screen and (max-width: 992px) {
+  .tile {
+    width: 80%;
+    margin-top: 50px;
+  }
+}
 .tile .image-container {
   margin-bottom: -4px;
+  min-height: 250px;
 }
-.tile .image-container img {
+.tile .image-container div {
   width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-size: cover;
 }
 .tile .icon-container-outer {
   position: relative;
@@ -878,10 +1144,50 @@ a {
   font-size: 1.4rem;
 }
 
-#contact-form {
-  margin: 100px;
+.tile-image-1 {
+  background-image: url(/assets/images/architecture-1216049-1919x1278.jpg);
 }
-#contact-form input[type=text],
+
+.tile-image-2 {
+  background-image: url(/assets/images/christopher-burns-8KfCR12oeUM-unsplash.jpg);
+}
+
+.tile-image-3 {
+  background-image: url(/assets/images/HardWorkingMan.jpg_fit=scale);
+}
+
+.contact-header h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+@media screen and (max-width: 992px) {
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+}
+.contact-header span {
+  height: 2px;
+  background-color: #1B1F22;
+  display: block;
+  width: 22%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact-form {
+  background-color: white;
+  padding: 40px;
+  border: #1B1F22;
+  border-width: 2px;
+  border-style: solid;
+  margin: 50px;
+}
+@media screen and (max-width: 992px) {
+  #contact-form {
+    width: 100%;
+  }
+}
+#contact-form input[type=text], #contact-form input[type=email], #contact-form input[type=number],
 #contact-form select,
 #contact-form textarea {
   width: 100%;
@@ -900,6 +1206,7 @@ a {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  display: block;
 }
 #contact-form input[type=submit]:hover {
   background-color: #45a049;
@@ -907,13 +1214,14 @@ a {
 #contact-form .gdpr-container {
   padding-top: 40px;
   cursor: pointer;
-  display: block;
-}
-#contact-form #mapid {
-  height: 180px;
-  width: 600px;
-  height: 300px;
   display: inline-block;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  #contact-form .gdpr-container {
+    display: block;
+    text-align: right;
+  }
 }
 #contact-form #recaptcha {
   background-color: white;
@@ -921,10 +1229,181 @@ a {
   width: 140px;
   height: 140px;
   text-align: center;
-  border: 4mm ridge rgba(170, 50, 220, 0.6);
+  border: 4mm solid #ff7b00;
+  margin-left: 55%;
+  position: relative;
+  top: -100px;
+}
+@media screen and (max-width: 992px) {
+  #contact-form #recaptcha {
+    display: block;
+    top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+#contact-form #mapid {
+  width: 600px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 992px) {
+  #contact-form #mapid {
+    width: 100%;
+  }
 }
 
 .contact-container {
-  width: 1600px;
+  max-width: 1600px;
+}
+@media screen and (max-width: 768px) {
+  .contact-container {
+    width: 100%;
+  }
+}
+
+#bad-input {
+  color: red;
+}
+
+#good-input {
+  color: #04AA6D;
+}
+
+.hidden-default {
+  display: none;
+}
+
+.control {
+  font-family: arial;
+  display: block;
+  position: relative;
+  padding-left: 38px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+@media screen and (max-width: 992px) {
+  .control {
+    width: 50%;
+  }
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control_indicator {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 24px;
+  width: 26px;
+  background: #e6e6e6;
+  border: 0px solid #000000;
+  border-radius: 0px;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+  background: #cccccc;
+}
+
+.control input:checked ~ .control_indicator {
+  background: #2aa1c0;
+}
+
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+  background-color: #0e6647;
+}
+
+.control input:disabled ~ .control_indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.control_indicator:after {
+  box-sizing: unset;
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}
+
+.control-checkbox .control_indicator:after {
+  left: 10px;
+  top: 4px;
+  width: 4px;
+  height: 12px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.control-checkbox input:disabled ~ .control_indicator:after {
+  border-color: #7b7b7b;
+}
+
+.control-checkbox .control_indicator::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: -1.3rem;
+  margin-top: -1.3rem;
+  background: #2aa1c0;
+  border-radius: 3rem;
+  opacity: 0.6;
+  z-index: 99999;
+  transform: scale(0);
+}
+
+@keyframes s-ripple {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes s-ripple-dup {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.control-checkbox input + .control_indicator::before {
+  animation: s-ripple 250ms ease-out;
+}
+
+.control-checkbox input:checked + .control_indicator::before {
+  animation-name: s-ripple-dup;
 }
 /*# sourceMappingURL=main.css.map */

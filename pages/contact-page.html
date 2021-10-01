@@ -58,44 +58,54 @@
                 <div class="inner">
                     <div class="container">
                         <div class="nav">
-                            <img class="logo" src="/assets/images/quality_logo.png"  alt="Quality Builders' company logo">
+                            <a href="/index.html">
+                                <img class="logo" src="/assets/images/quality_logo.png"
+                                    alt="Quality Builders' company logo">
+                            </a>
                             <ul class="nav_list">
-                              <li class="item">
-                                <a href="#">About Us</a>
-                              </li>
-                              <li class="item drop_menu">
-                                <a class="service_item" href="#">Services</a>
-                                <ul class="drop_down">
-                                  <li class="nav_item"><a href="/pages/construction.html">Construction</a></li>
-                                  <li class="nav_item"><a href="/pages/architecture.html">Architecture</a></li>
-                                  <li class="nav_item"><a href="/pages/installation.html">Installation</a></li>
-                                </ul>
-                              </li>
-                              <li class="item">
-                                <a href="#">Testimonials</a>
-                              </li>
-                              <li class="item">
-                                <a href="/pages/contact-page.html">Contact us</a>
-                              </li>
+                                <li class="item">
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li class="item drop_menu">
+                                    <a class="service_item" href="#">Services</a>
+                                    <ul class="drop_down">
+                                        <li class="nav_item"><a href="/pages/construction.html">Construction</a></li>
+                                        <li class="nav_item"><a href="/pages/architecture.html">Architecture</a></li>
+                                        <li class="nav_item"><a href="/pages/installation.html">Installation</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Testimonials</a>
+                                </li>
+                                <li class="item">
+                                    <a href="/pages/contact-page.html">Contact us</a>
+                                </li>
                             </ul>
                             <div class="menu">
-                              <i class="fas fa-bars hamburger"></i>
-                              MENU
+                                <i class="fas fa-bars hamburger"></i>
+                                MENU
                             </div>
                             <div class="contact_tele">
-                              <i class="fas fa-phone-alt tele_icon"></i>
-                              01234 567890
+                                <i class="fas fa-phone-alt tele_icon"></i>
+                                01234 567890
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </header>
 
 
             <div id="page-description-section" class="page-section">
+                <div class="contact-header">
+                    <h1>
+                        Contact us
+                        <span>
+                        </span>
+                    </h1>
+                </div>
                 <div class="container contact-container">
                     <div id="contact-form">
-                        <form action="/action_page.php">
+                        <form onsubmit="isFormValid()">
                             <!--First name-->
                             <label for="fname">First Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -106,38 +116,44 @@
 
                             <!--Email address-->
                             <label for="eAddress">Email Address</label>
-                            <input type="text" id="eAddress" name="email" placeholder="Your email address..">
+                            <input type="email" id="eAddress" name="email" placeholder="Your email address..">
 
 
                             <!--Email address-->
-                            <label for="pNumber">Email Address</label>
-                            <input type="text" id="pNumber" name="phoneNumber" placeholder="Your number..">
+                            <label for="pNumber">Phone Number</label>
+                            <input type="number" id="pNumber" name="phoneNumber" placeholder="Your number..">
 
                             <!--Message-->
                             <label for="subject">Message</label>
                             <textarea id="subject" name="subject" placeholder="Write something.."
                                 style="height:200px"></textarea>
-                            <input type="submit" value="Submit">
 
-                            <label class="gdpr-container">
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                                Please tick this box if you agree to our Privacy Policy on how we use your data.
-                            </label>
+                            <input type="submit" value="Submit">
+                            <p id="good-input" class="hidden-default">
+                                Form submitted!
+                            </p>
+                            <p id="bad-input" class="hidden-default">
+                                Bad input, please check fields.
+                            </p>
+
+                            <!--gdpr button-->
+                            <div class="gdpr-container">
+                                <label class="control control-checkbox">
+                                    Please click this if you agree to our GDPR policy.
+                                    <input id="gdprCheckbox" type="checkbox" checked="checked" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </div>
+
+                            <div id="recaptcha">
+                                <p>
+                                    recaptcha
+                                </p>
+                            </div>
                         </form>
 
                         <div id="mapid">
-
                         </div>
-
-                        <div id="recaptcha">
-                            <p>
-                                recaptcha
-                            </p>
-                        </div>
-
-
-
                     </div>
                 </div>
             </div>
@@ -227,7 +243,8 @@
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
 
-    <script src="/js/map.js"></script>
+    <script src="/js/contact-form-functions.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 
 </html>

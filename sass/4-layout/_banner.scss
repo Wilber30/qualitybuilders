@@ -1,7 +1,7 @@
 //  Banner
 @import '../1-helpers/varibles',
-        '../1-helpers/media',
-        '../1-helpers/mixins';
+'../1-helpers/media',
+'../1-helpers/mixins';
 
 .banner {
   position: relative;
@@ -13,16 +13,82 @@
   .slick-track {
     height: 100vh;
   }
+
+  //slick stlying
+  .slick-arrow {
+    width: 150px;
+    height: 150px;
+    z-index: 900;
+  }
+
+  .slick-next {
+    right: 90px;
+    top: 350px;
+
+  }
+
+  .slick-prev {
+    left: 90px;
+    top: 350px;
+  }
+
+
+  .slick-prev:before {
+    color: black;
+    content: "<";
+    font-size: 8rem;
+  }
+
+  .slick-next:before {
+    color: black;
+    content: ">";
+    font-size: 8rem;
+  }
+
+  @media only screen and (max-width: 1345px) {
+    .slick-arrow {
+      display: none !important;
+    }
+  }
+
+  @media only screen and (max-width: 1580px) {
+    .slick-next {
+      right: -25px;
+
+    }
+
+    .slick-prev {
+      left: -25px;
+    }
+  }
+
 }
 
 .construction {
   height: 100vh;
   display: flex;
   overflow: hidden;
-  background-image: url("../assets/images/Housing-Home-Neighborhood-Construction-Intelligence-Header-Alt-02.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+//the extra classes to set the background images
+
+.construction-bck1 {
+  background-image: url("/assets/images/christopher-burns-8KfCR12oeUM-unsplash.jpg");
+}
+
+.construction-bck2 {
+  background-image: url("/assets/images/Housing-Home-Neighborhood-Construction-Intelligence-Header-Alt-02.jpg");
+}
+
+.construction-bck3 {
+  background-image: url("/assets/images/mark-potterton-sNVkn3507Oo-unsplash.jpg");
+}
+
+.construction-bck4 {
+  background-image: url("/assets/images/scott-blake-x-ghf9LjrVg-unsplash.jpg");
 }
 
 
@@ -85,9 +151,14 @@
 
 
 .text-box {
-  margin-bottom: 100px;
   padding: 0px 30px 0px 30px;
   z-index: 100;
+}
+
+@media only screen and (max-width: 1345px) {
+  .text-box {
+
+  }
 }
 
 .headline {
@@ -122,6 +193,7 @@
   @include btn-lg;
   margin-top: 5px;
   padding: 15px 45px;
+
   &:hover {
     @include transition-link;
     background-color: $white-hover;
