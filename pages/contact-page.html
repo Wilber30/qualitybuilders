@@ -23,14 +23,10 @@
     <!--apis-->
 
     <!--main jquery import-->
-    <script src="/js/jquery-3.6.0.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
 
     <!-- jquery plugins css inports -->
-    <link rel="stylesheet" href="/jquery plugins/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="/jquery plugins/slick/slick-theme.css" />
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="css/all.min.css">
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,8 +42,6 @@
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
         crossorigin="" />
 
-    <!--Slick-->
-    <link rel="stylesheet" type="text/css" href="/jquery plugins/slick/slick.css">
 
 </head>
 
@@ -105,18 +99,18 @@
                 </div>
                 <div class="container contact-container">
                     <div id="contact-form">
-                        <form onsubmit="isFormValid()">
+                        <form oninput="isFormValid()"  method="POST">
                             <!--First name-->
                             <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <input type="text" id="fName" name="fName" placeholder="Your name..">
 
                             <!--last name-->
                             <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            <input type="text" id="lName" name="lName" placeholder="Your last name..">
 
                             <!--Email address-->
                             <label for="eAddress">Email Address</label>
-                            <input type="email" id="eAddress" name="email" placeholder="Your email address..">
+                            <input type="email" id="eAddress" name="eAddress" placeholder="Your email address..">
 
 
                             <!--Email address-->
@@ -124,23 +118,21 @@
                             <input type="number" id="pNumber" name="phoneNumber" placeholder="Your number..">
 
                             <!--Message-->
-                            <label for="subject">Message</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.."
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Write something.."
                                 style="height:200px"></textarea>
 
                             <input type="submit" value="Submit">
-                            <p id="good-input" class="hidden-default">
+                            <p id="submitButton" class="hidden-default">
                                 Form submitted!
                             </p>
-                            <p id="bad-input" class="hidden-default">
-                                Bad input, please check fields.
-                            </p>
+
 
                             <!--gdpr button-->
                             <div class="gdpr-container">
                                 <label class="control control-checkbox">
                                     Please click this if you agree to our GDPR policy.
-                                    <input id="gdprCheckbox" type="checkbox" checked="checked" />
+                                    <input id="gdpr" type="checkbox" checked="checked" />
                                     <div class="control_indicator"></div>
                                 </label>
                             </div>
@@ -244,7 +236,7 @@
         crossorigin=""></script>
 
     <script src="/js/contact-form-functions.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="/js/map-functions.js"></script>
 </body>
 
 </html>

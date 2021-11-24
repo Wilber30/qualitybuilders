@@ -44,6 +44,8 @@
         margin-top: 6px;
         margin-bottom: 16px;
         resize: vertical;
+        outline: none !important;
+        border-width: 2px;
     }
 
     input[type=submit] {
