@@ -20,11 +20,11 @@ exports.default = defaultTask
 
 //Function that compiles sass --> css + mapfiles
 const bundleSass = () => {
-  return src('sass/**/*.scss')
+  return src('./sass/**/*.scss')
     .pipe(sourceMaps.init())
     .pipe(compileSass().on('error', compileSass.logError))
     .pipe(sourceMaps.write(''))
-    .pipe(dest('css'));
+    .pipe(dest('./css'));
 };
 
 
@@ -32,7 +32,7 @@ const bundleSass = () => {
 
 //function that runs on watch and so is constant
 const devWatch = () => {
-  watch('sass/**/*.scss', bundleSass);
+  watch('./sass/**/*.scss', bundleSass);
 };
 
 exports.default = defaultTask;
